@@ -1,0 +1,25 @@
+### 1. Створити перший товар (Натисніть зелену стрілку зліва)
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Iphone 15 Pro",
+  "price": 1200,
+  "description": "Дуже класний телефон"
+}
+
+### 2. Створити другий товар (послугу)
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Ремонт ноутбука",
+  "price": 500,
+  "description": "Чистка та заміна термопасти"
+}
+
+### 3. ОТРИМАТИ ВЕСЬ СПИСОК (Перевірка 1-го ендпоінту)
+GET http://localhost:3000/products
+
+### 4. ОТРИМАТИ ОДИН ТОВАР (Перевірка 2-го ендпоінту)
+GET http://localhost:3000/products/1
